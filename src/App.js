@@ -7,7 +7,6 @@ import FunIntro from './components/FunIntro';
 import ThesisDissertationPage from './components/ThesisDissertationPage';  
 import Classrooms from './components/Classrooms';
 
-
 function App() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -22,7 +21,8 @@ function App() {
   }, [darkMode]);
 
   return (
-    <Router>
+    // Set the basename to your GitHub repo
+    <Router basename="/kurshid1991.github.io">
       <div className={`min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-br from-slate-100 to-slate-300 text-gray-800'}`}>
         {/* 🌗 Theme Toggle Button */}
         <div className="absolute top-4 right-4 z-50">
@@ -43,8 +43,6 @@ function App() {
           
           {/* Google Classroom Projects route */}
           <Route path="/projects/classrooms" element={<Classrooms />} />
-          
-          {/* Catch-all route */}
         </Routes>
       </div>
     </Router>
