@@ -1,9 +1,12 @@
-// tailwind.config.js
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: 'class', // 👈 enable class-based dark mode
   theme: {
     extend: {
+      fontFamily: {
+        // Add Monotype Corsiva for scoped use only (e.g., hover)
+        monotypeCorsiva: ['"Monotype Corsiva"', 'cursive'],
+      },
       backgroundImage: {
         'hero-gradient': 'linear-gradient(to right, #4f46e5, #9333ea)',
       },

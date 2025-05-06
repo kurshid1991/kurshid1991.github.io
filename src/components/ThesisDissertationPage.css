@@ -1,0 +1,68 @@
+/* src/components/ThesisDissertationPage.css */
+.thesis-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.thesis-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.thesis-container p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Custom styling for modal */
+.fixed {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 50;
+}
+
+.bg-black {
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-white {
+background-color: white;
+}
+
+.dark\:bg-gray-800 {
+background-color: #1f2937;
+}
+
+.text-gray-800 {
+color: #333;
+}
+
+.text-gray-500 {
+color: #6b7280;
+}
+
+.text-gray-700 {
+color: #374151;
+}
+
+/* Scrollable Image Section */
+.overflow-x-auto {
+overflow-x: auto;
+}
+
+.max-w-full {
+max-width: 100%;
+}
+
+.space-x-4 {
+margin-left: -1rem;
+}
+
+.transition {
+transition: all 0.3s;
+}
