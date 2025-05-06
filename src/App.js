@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Hero from './components/Hero';
-import ProjectsPage from './components/ProjectsPage';  
+import ProjectsPage from './components/ProjectsPage';
 import FunIntro from './components/FunIntro';
-import ThesisDissertationPage from './components/ThesisDissertationPage';  
+import ThesisDissertationPage from './components/ThesisDissertationPage';
 import Classrooms from './components/Classrooms';
 
 function App() {
@@ -21,14 +21,19 @@ function App() {
   }, [darkMode]);
 
   return (
-    <Router basename="/kurshid1991.github.io">
+    <Router>
       <div className={`min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-br from-slate-100 to-slate-300 text-gray-800'}`}>
+        {/* 🌗 Theme Toggle Button */}
         <div className="absolute top-4 right-4 z-50">
-          <button onClick={() => setDarkMode(!darkMode)} className="bg-gray-300 dark:bg-gray-700 text-sm text-gray-800 dark:text-white px-4 py-2 rounded-full shadow hover:scale-105 transition">
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="bg-gray-300 dark:bg-gray-700 text-sm text-gray-800 dark:text-white px-4 py-2 rounded-full shadow hover:scale-105 transition"
+          >
             {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
           </button>
         </div>
 
+        {/* ✨ Main Content */}
         <Routes>
           <Route path="/" element={<><Hero /><FunIntro /></>} />
           <Route path="/projects" element={<ProjectsPage />} />
