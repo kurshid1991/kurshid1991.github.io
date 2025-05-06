@@ -21,27 +21,18 @@ function App() {
   }, [darkMode]);
 
   return (
-    // Set the basename to your GitHub repo
     <Router basename="/kurshid1991.github.io">
       <div className={`min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-br from-slate-100 to-slate-300 text-gray-800'}`}>
-        {/* 🌗 Theme Toggle Button */}
         <div className="absolute top-4 right-4 z-50">
           <button onClick={() => setDarkMode(!darkMode)} className="bg-gray-300 dark:bg-gray-700 text-sm text-gray-800 dark:text-white px-4 py-2 rounded-full shadow hover:scale-105 transition">
             {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
           </button>
         </div>
 
-        {/* ✨ Main Content */}
         <Routes>
           <Route path="/" element={<><Hero /><FunIntro /></>} />
-          
-          {/* Projects route */}
           <Route path="/projects" element={<ProjectsPage />} />
-          
-          {/* Thesis Dissertation route */}
           <Route path="/projects/thesis" element={<ThesisDissertationPage />} />
-          
-          {/* Google Classroom Projects route */}
           <Route path="/projects/classrooms" element={<Classrooms />} />
         </Routes>
       </div>
