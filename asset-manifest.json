@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kurshid1991.github.io/static/css/main.5436d2ae.css",
-    "main.js": "/kurshid1991.github.io/static/js/main.be38acde.js",
+    "main.js": "/kurshid1991.github.io/static/js/main.7c6d8c7a.js",
     "static/js/453.acca0757.chunk.js": "/kurshid1991.github.io/static/js/453.acca0757.chunk.js",
     "index.html": "/kurshid1991.github.io/index.html",
     "main.5436d2ae.css.map": "/kurshid1991.github.io/static/css/main.5436d2ae.css.map",
-    "main.be38acde.js.map": "/kurshid1991.github.io/static/js/main.be38acde.js.map",
+    "main.7c6d8c7a.js.map": "/kurshid1991.github.io/static/js/main.7c6d8c7a.js.map",
     "453.acca0757.chunk.js.map": "/kurshid1991.github.io/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5436d2ae.css",
-    "static/js/main.be38acde.js"
+    "static/js/main.7c6d8c7a.js"
   ]
 }
